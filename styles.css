@@ -15,13 +15,19 @@ html, body, .hello-parent {
 
 .hello-word {
   margin:auto;
+  padding: 10%;
 }
+
+#Layer_1 {
+
+}
+
 /* H Animation */
 
 .H-left-stroke {
   stroke-dasharray: 124px;
   stroke-dashoffset: 124px;
-  animation: H-left-move 20s ease forwards;
+  animation: Hello-left-move 20s ease forwards;
 }
 
 .H-mid-stroke {
@@ -34,6 +40,18 @@ html, body, .hello-parent {
   stroke-dasharray: 124px;
   stroke-dashoffset: 124px;
   animation: H-right-move 13s ease forwards;
+}
+
+@keyframes Hello-left-move {
+  0% {
+    stroke-dashoffset: 124px;
+  }
+  5% {
+    stroke-dashoffset: 0px;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
 }
 
 @keyframes H-left-move {
